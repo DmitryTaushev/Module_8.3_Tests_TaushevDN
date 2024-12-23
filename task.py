@@ -13,20 +13,20 @@ class Teacher:
     def get_education(self):
         return self.__education
 
-    def set_xp(self,value):
-        self.__xp = value
+    def get_xp(self):
+        return self.__xp
 
     def get_teacher_data(self):
-        return print(f"{self.__name}, образование {self.__education}, опыт работы {self.__xp} года")
+        return f"{self.__name}, образование {self.__education}, опыт работы {self.__xp} года"
 
     def add_mark(self,student_name,student_mark):
-        return print(f'{self.__name} поставил оценку {student_mark} студенту {student_name}')
+        return f'{self.__name} поставил оценку {student_mark} студенту {student_name}'
 
     def remove_mark(self,student_name,student_mark):
-        return print(f'{self.__name} удалил оценку {student_mark} студенту {student_name}')
+        return f'{self.__name} удалил оценку {student_mark} студенту {student_name}'
 
     def give_a_consultation(self,student_class):
-        return print(f'{self.__name} провел консультацию в классе {student_class}')
+        return f'{self.__name} провел консультацию в классе {student_class}'
     
     def teacher_fire(self):
         if self.__name in Teacher.teacher_dict.keys():
