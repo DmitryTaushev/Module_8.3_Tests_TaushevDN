@@ -6,6 +6,7 @@ class TestTeacher(unittest.TestCase):
     
     def test_1_init(self):
         self.assertEqual(len(Teacher.teacher_dict),1)
+        self.assertEqual(Teacher.teacher_dict,{'Иван Петров': ['БГПУ']})
 
     def test_2_get_name(self):
         self.assertEqual(self.teacher.get_name(), 'Иван Петров')
